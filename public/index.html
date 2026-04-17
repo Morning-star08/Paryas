@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayas | AI Tutor for SEE and NEB</title>
+  <meta
+    name="description"
+    content="Prayas is an AI tutor built for SEE and NEB students in Nepal with syllabus-based help, smarter practice, and WhatsApp-friendly updates."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="toast" id="toast">You are on the Prayas waitlist.</div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Prayas home">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 160 120">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M21 53c12-4 27-17 37-36 8 16 5 28-9 38 12 0 25 6 31 13-24 1-44-4-59-15Z" fill="#10181D"/>
+              <path d="M139 53c-12-4-27-17-37-36-8 16-5 28 9 38-12 0-25 6-31 13 24 1 44-4 59-15Z" fill="#10181D"/>
+              <path d="M30 57c15-4 25-11 37-24-1 9-5 18-14 27 8 0 14 3 21 9-14-1-30-4-44-12Z" fill="#24323B"/>
+              <path d="M130 57c-15-4-25-11-37-24 1 9 5 18 14 27-8 0-14 3-21 9 14-1 30-4 44-12Z" fill="#24323B"/>
+              <path d="M37 84c15-2 28-2 43 4 15-6 28-6 43-4-7-9-12-13-20-19-10 3-15 4-23 11-8-7-13-8-23-11-8 6-13 10-20 19Z" fill="#D45D2D"/>
+              <path d="M41 79c12-2 24-1 39 5-8-11-16-17-25-21-5 4-9 8-14 16Z" fill="#0F161A"/>
+              <path d="M119 79c-12-2-24-1-39 5 8-11 16-17 25-21 5 4 9 8 14 16Z" fill="#0F161A"/>
+              <circle cx="80" cy="28" r="9" fill="#10181D"/>
+              <path d="M53 17l2-7M41 25l-5-5M108 17l-2-7M120 25l5-5" stroke="#D68F37" stroke-width="3.4" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <div class="brand-copy">
+          <span class="brand-kicker">Nepal-first AI tutor</span>
+          <span class="brand-wordmark">Prayas.</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#join">Join</a>
+      </nav>
+
+      <a class="button button-dark header-cta" href="#join">Get early access</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Built for SEE and NEB students in Nepal</div>
+          <h1>Study with AI that actually knows your syllabus.</h1>
+          <p class="hero-text">
+            Prayas helps students revise faster, practice smarter, and focus on the chapters that matter most.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-accent" href="#join">Join waitlist</a>
+            <a class="button button-soft" href="#features">See how it works</a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="proof-pill">
+              <strong id="liveCount">127+</strong>
+              <span>students waiting</span>
+            </div>
+            <div class="proof-pill">
+              <strong>SEE + NEB</strong>
+              <span>focused support</span>
+            </div>
+            <div class="proof-pill">
+              <strong>Email + WhatsApp</strong>
+              <span>updates ready</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="app-card">
+            <div class="app-top">
+              <span class="app-status">Private beta</span>
+              <span class="app-grade">Grade 10 and 12</span>
+            </div>
+
+            <div class="app-body">
+              <div class="app-question">
+                Explain electrolysis in 5-mark format.
+              </div>
+
+              <div class="app-answer">
+                <strong>Prayas response</strong>
+                <p>Start with the definition, explain ion movement clearly, then finish with one textbook example.</p>
+              </div>
+
+              <div class="app-bars">
+                <div class="bar-card">
+                  <span>Answer structure</span>
+                  <div class="meter"><span style="width: 84%"></span></div>
+                </div>
+                <div class="bar-card">
+                  <span>Exam fit</span>
+                  <div class="meter"><span style="width: 91%"></span></div>
+                </div>
+              </div>
+
+              <div class="app-tags">
+                <span>Chapter based</span>
+                <span>Weak-area practice</span>
+                <span>Night-before revision</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip reveal">
+      <div class="shell strip-inner">
+        <div class="strip-item">
+          <strong>Less random AI</strong>
+          <span>More exam-focused help</span>
+        </div>
+        <div class="strip-item">
+          <strong>Shorter sessions</strong>
+          <span>Better revision under pressure</span>
+        </div>
+        <div class="strip-item">
+          <strong>Simpler output</strong>
+          <span>Built to be understood fast</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-tag">Why it feels different</p>
+            <h2>Clearer, sharper, more useful.</h2>
+          </div>
+          <p class="section-copy">
+            No long explanations. No generic AI feel. Just the parts students actually care about.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-number">01</span>
+            <h3>Syllabus based</h3>
+            <p>Answers stay close to your chapter and board context.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-number">02</span>
+            <h3>Exam style answers</h3>
+            <p>Practice in a format that actually helps in exams.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-number">03</span>
+            <h3>Weak-area focus</h3>
+            <p>Spend more time where you are actually losing marks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="how">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-tag">How it works</p>
+            <h2>Simple flow. Fast value.</h2>
+          </div>
+          <p class="section-copy">
+            The experience should feel easy in under a minute.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-number">1</span>
+            <h3>Pick your subject</h3>
+            <p>Start from SEE or NEB and go directly to the chapter you need.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <span class="step-number">2</span>
+            <h3>Ask or practice</h3>
+            <p>Get explanation, write an answer, or switch into quick revision mode.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <span class="step-number">3</span>
+            <h3>Improve faster</h3>
+            <p>Use feedback to tighten structure and focus on weak areas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mini-section">
+      <div class="shell mini-grid">
+        <div class="mini-panel reveal">
+          <p class="section-tag">Built for</p>
+          <h2>Students who want less confusion.</h2>
+        </div>
+
+        <div class="mini-cards reveal">
+          <div class="mini-card">
+            <strong>SEE students</strong>
+            <span>Better chapter revision and answer structure.</span>
+          </div>
+          <div class="mini-card">
+            <strong>NEB students</strong>
+            <span>Cleaner practice for science and theory-heavy subjects.</span>
+          </div>
+          <div class="mini-card">
+            <strong>Parents</strong>
+            <span>A focused tool that feels more useful than generic AI.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join-section" id="join">
+      <div class="shell join-grid">
+        <div class="join-copy reveal">
+          <p class="section-tag">Join the waitlist</p>
+          <h2>Be first when Prayas opens.</h2>
+          <p>
+            Choose email, WhatsApp, or both. The backend is already connected and ready to collect real signups.
+          </p>
+        </div>
+
+        <div class="form-card reveal">
+          <form class="waitlist-form" id="waitlistForm">
+            <div class="field-grid">
+              <label class="field">
+                <span>Full name</span>
+                <input type="text" id="nameInput" name="name" placeholder="Your full name" autocomplete="name" required>
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input type="email" id="emailInput" name="email" placeholder="you@example.com" autocomplete="email">
+              </label>
+            </div>
+
+            <label class="field">
+              <span>WhatsApp</span>
+              <input type="tel" id="whatsappInput" name="whatsapp" placeholder="+977 98XXXXXXXX" autocomplete="tel">
+            </label>
+
+            <div class="preference-box">
+              <span class="preference-title">Preferred contact</span>
+              <div class="preference-options">
+                <label><input type="radio" id="contactEmail" name="preferredContact" value="email" checked> Email</label>
+                <label><input type="radio" id="contactWhatsapp" name="preferredContact" value="whatsapp"> WhatsApp</label>
+                <label><input type="radio" id="contactBoth" name="preferredContact" value="both"> Both</label>
+              </div>
+            </div>
+
+            <button class="button button-accent button-full" type="submit">Save my spot</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="waitlist-proof">
+            <div class="avatar-row" aria-hidden="true">
+              <span>R</span>
+              <span>S</span>
+              <span>M</span>
+              <span>A</span>
+            </div>
+            <p id="waitlistProofText">127+ early students have already joined.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="brand brand-footer">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 160 120">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M21 53c12-4 27-17 37-36 8 16 5 28-9 38 12 0 25 6 31 13-24 1-44-4-59-15Z" fill="#10181D"/>
+              <path d="M139 53c-12-4-27-17-37-36-8 16-5 28 9 38-12 0-25 6-31 13 24 1 44-4 59-15Z" fill="#10181D"/>
+              <path d="M30 57c15-4 25-11 37-24-1 9-5 18-14 27 8 0 14 3 21 9-14-1-30-4-44-12Z" fill="#24323B"/>
+              <path d="M130 57c-15-4-25-11-37-24 1 9 5 18 14 27-8 0-14 3-21 9 14-1 30-4 44-12Z" fill="#24323B"/>
+              <path d="M37 84c15-2 28-2 43 4 15-6 28-6 43-4-7-9-12-13-20-19-10 3-15 4-23 11-8-7-13-8-23-11-8 6-13 10-20 19Z" fill="#D45D2D"/>
+              <path d="M41 79c12-2 24-1 39 5-8-11-16-17-25-21-5 4-9 8-14 16Z" fill="#0F161A"/>
+              <path d="M119 79c-12-2-24-1-39 5 8-11 16-17 25-21 5 4 9 8 14 16Z" fill="#0F161A"/>
+              <circle cx="80" cy="28" r="9" fill="#10181D"/>
+              <path d="M53 17l2-7M41 25l-5-5M108 17l-2-7M120 25l5-5" stroke="#D68F37" stroke-width="3.4" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <div class="brand-copy">
+          <span class="brand-kicker">Nepal-first AI tutor</span>
+          <span class="brand-wordmark">Prayas.</span>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <span>Built in Pokhara, Nepal.</span>
+        <span>&copy; 2026 Prayas.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

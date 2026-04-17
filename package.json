@@ -1,0 +1,13 @@
+{
+  "name": "prayas-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prayas landing page with waitlist backend for Render and Supabase.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4"
+  }
+}
