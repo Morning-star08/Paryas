@@ -12,10 +12,12 @@ const DATA_DIR = path.join(ROOT, "data");
 const DATA_FILE = path.join(DATA_DIR, "waitlist.json");
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
-const USE_SUPABASE = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const SUPABASE_KEY = SUPABASE_SERVICE_ROLE_KEY || SUPABASE_ANON_KEY;
+const USE_SUPABASE = Boolean(SUPABASE_URL && SUPABASE_KEY);
 
 const supabase = USE_SUPABASE
-  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+  ? createClient(SUPABASE_URL, SUPABASE_KEY, {
       auth: { persistSession: false, autoRefreshToken: false }
     })
   : null;
@@ -243,6 +245,7 @@ const server = http.createServer(async (request, response) => {
       const count = await getWaitlistCount();
       sendJson(response, 200, { count, mode: USE_SUPABASE ? "supabase" : "local" });
     } catch (error) {
+      console.error("Waitlist count error:", error);
       sendJson(response, 500, { error: "Could not load the waitlist count." });
     }
     return;
@@ -317,6 +320,7 @@ const server = http.createServer(async (request, response) => {
         mode: USE_SUPABASE ? "supabase" : "local"
       });
     } catch (error) {
+      console.error("Waitlist save error:", error);
       sendJson(response, 500, { error: "Could not save the waitlist entry." });
     }
     return;
