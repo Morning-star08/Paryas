@@ -180,6 +180,9 @@ button,input,select{font:inherit}
 .prog-name{font-size:0.82rem;color:var(--text2);width:160px;flex-shrink:0}
 .prog-bar{flex:1;height:6px;background:rgba(255,255,255,0.07);border-radius:var(--r-sm);overflow:hidden}
 .prog-fill{height:100%;border-radius:var(--r-sm);background:linear-gradient(90deg,var(--accent2),var(--accent))}
+.prog-fill-82{width:82%}
+.prog-fill-54{width:54%}
+.prog-fill-71{width:71%}
 .prog-pct{font-size:0.75rem;color:var(--text3);width:32px;text-align:right;flex-shrink:0}
 .app-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .app-stat{padding:12px;border-radius:var(--r-md);background:var(--surface);border:1px solid var(--border);text-align:center}
@@ -347,6 +350,7 @@ button,input,select{font:inherit}
 .waitlist-bullets{display:flex;flex-direction:column;gap:10px}
 .waitlist-bullet{display:flex;align-items:flex-start;gap:10px;font-size:0.88rem;color:var(--text2)}
 .bullet-check{color:var(--green);font-weight:700;flex-shrink:0;margin-top:1px}
+.sec-label-warm{color:rgba(240,200,170,0.7)}
 .waitlist-form-wrap{
   background:rgba(255,255,255,0.04);border:1px solid var(--border2);
   border-radius:24px;padding:32px
@@ -374,6 +378,9 @@ button,input,select{font:inherit}
 .footer{padding:32px 0;border-top:1px solid var(--border)}
 .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .footer-brand{display:flex;align-items:center;gap:10px}
+.footer-brand-mark{width:32px;height:32px;border-radius:8px}
+.footer-brand-mark svg{width:18px;height:18px}
+.footer-brand-name{font-size:1rem}
 .footer-text{font-size:0.83rem;color:var(--text3)}
 
 .reveal{opacity:1;transform:none}
@@ -437,7 +444,7 @@ button,input,select{font:inherit}
       <a href="#subjects">Subjects</a>
       <a href="#join">Join</a>
     </div>
-    <button class="nav-cta" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Get Early Access</button>
+    <button type="button" class="nav-cta" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Get Early Access</button>
   </div>
 </nav>
 
@@ -453,8 +460,8 @@ button,input,select{font:inherit}
       </div>
       <p class="hero-sub">Prayas helps students learn faster with focused explanations, practice questions, answer feedback, and revision support that adapts to your weak areas. Not a generic chatbot. A real study partner.</p>
       <div class="hero-btns">
-        <button class="btn-main" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Join the Waitlist</button>
-        <button class="btn-outline" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Try Live Demo</button>
+        <button type="button" class="btn-main" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Join the Waitlist</button>
+        <button type="button" class="btn-outline" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Try Live Demo</button>
       </div>
       <div class="hero-trust">
         <div class="avatars">
@@ -472,9 +479,9 @@ button,input,select{font:inherit}
         </div>
         <div class="app-body">
           <div class="grade-selector">
-            <button class="grade-btn">School</button>
-            <button class="grade-btn active">High School</button>
-            <button class="grade-btn">Science</button>
+            <button type="button" class="grade-btn">School</button>
+            <button type="button" class="grade-btn active">High School</button>
+            <button type="button" class="grade-btn">Science</button>
           </div>
           <div class="chat-area">
             <div class="chat-label">Live session - Physics revision</div>
@@ -485,17 +492,17 @@ button,input,select{font:inherit}
             <div class="prog-label">Your weak areas this week</div>
             <div class="prog-item">
               <span class="prog-name">Physics: Numericals</span>
-              <div class="prog-bar"><div class="prog-fill" style="width:82%"></div></div>
+              <div class="prog-bar"><div class="prog-fill prog-fill-82"></div></div>
               <span class="prog-pct">82%</span>
             </div>
             <div class="prog-item">
               <span class="prog-name">Chemistry: Organic</span>
-              <div class="prog-bar"><div class="prog-fill" style="width:54%"></div></div>
+              <div class="prog-bar"><div class="prog-fill prog-fill-54"></div></div>
               <span class="prog-pct">54%</span>
             </div>
             <div class="prog-item">
               <span class="prog-name">English: Long answers</span>
-              <div class="prog-bar"><div class="prog-fill" style="width:71%"></div></div>
+              <div class="prog-bar"><div class="prog-fill prog-fill-71"></div></div>
               <span class="prog-pct">71%</span>
             </div>
           </div>
@@ -633,10 +640,10 @@ button,input,select{font:inherit}
         <h2>Talk to Prayas. <em>Right now.</em></h2>
         <p>This is an interactive preview of how Prayas responds. It is designed to feel focused, helpful, and safe without exposing any secret API keys in the browser.</p>
         <div class="mode-row">
-          <button class="mode-btn active" onclick="setMode(this,'explain')">Explain topic</button>
-          <button class="mode-btn" onclick="setMode(this,'quiz')">Quiz me</button>
-          <button class="mode-btn" onclick="setMode(this,'check')">Check my answer</button>
-          <button class="mode-btn" onclick="setMode(this,'revise')">Quick revision</button>
+          <button type="button" class="mode-btn active" onclick="setMode(this,'explain')">Explain topic</button>
+          <button type="button" class="mode-btn" onclick="setMode(this,'quiz')">Quiz me</button>
+          <button type="button" class="mode-btn" onclick="setMode(this,'check')">Check my answer</button>
+          <button type="button" class="mode-btn" onclick="setMode(this,'revise')">Quick revision</button>
         </div>
         <div class="demo-context">
           <div class="demo-context-label">Your context</div>
@@ -668,7 +675,7 @@ button,input,select{font:inherit}
           </div>
           <div class="chat-win-input">
             <input type="text" id="chatInput" placeholder="Ask anything you are studying..." onkeydown="if(event.key==='Enter')sendMsg()">
-            <button class="send-btn" id="sendBtn" onclick="sendMsg()">></button>
+            <button type="button" class="send-btn" id="sendBtn" onclick="sendMsg()">&gt;</button>
           </div>
           <div class="api-note">Interactive preview mode - safe study-focused responses without external API exposure</div>
         </div>
@@ -762,7 +769,7 @@ button,input,select{font:inherit}
     <div class="waitlist-wrap reveal">
       <div class="waitlist-glow"></div>
       <div class="waitlist-left">
-        <div class="sec-label" style="color:rgba(240,200,170,0.7)">Early access</div>
+        <div class="sec-label sec-label-warm">Early access</div>
         <h2>Join before the <em>first wave</em> gets in.</h2>
         <p>Prayas is being built carefully, and early users will help shape a better study tool for students everywhere. Early members get:</p>
         <div class="waitlist-bullets">
@@ -842,14 +849,14 @@ button,input,select{font:inherit}
 <footer class="footer">
   <div class="shell footer-inner">
     <div class="footer-brand brand">
-      <div class="brand-mark" style="width:32px;height:32px;border-radius:8px">
-        <svg viewBox="0 0 160 120" fill="none" style="width:18px;height:18px">
+      <div class="brand-mark footer-brand-mark">
+        <svg viewBox="0 0 160 120" fill="none">
           <path d="M21 53c12-4 27-17 37-36 8 16 5 28-9 38 12 0 25 6 31 13-24 1-44-4-59-15Z" fill="white"/>
           <path d="M139 53c-12-4-27-17-37-36-8 16-5 28 9 38-12 0-25 6-31 13 24 1 44-4 59-15Z" fill="white"/>
           <path d="M37 84c15-2 28-2 43 4 15-6 28-6 43-4-7-9-12-13-20-19-10 3-15 4-23 11-8-7-13-8-23-11-8 6-13 10-20 19Z" fill="rgba(255,255,255,0.9)"/>
         </svg>
       </div>
-      <div class="brand-name" style="font-size:1rem">Prayas<span>.</span></div>
+      <div class="brand-name footer-brand-name">Prayas<span>.</span></div>
     </div>
     <div class="footer-text">Built with care in Pokhara, Nepal for students everywhere.</div>
     <div class="footer-text">© 2026 Prayas. All rights reserved.</div>
@@ -857,7 +864,14 @@ button,input,select{font:inherit}
 </footer>
 
 <script>
-const API_BASE = '/api';
+const isPreviewMode =
+  window.location.protocol === 'file:' ||
+  (
+    ['localhost', '127.0.0.1'].includes(window.location.hostname) &&
+    window.location.port &&
+    window.location.port !== '3000'
+  );
+const API_BASE = isPreviewMode ? 'http://localhost:3000/api' : '/api';
 let currentMode = 'explain';
 let currentCtx = 'High School - Physics';
 
@@ -950,7 +964,7 @@ function makePreviewReply(question) {
   }
 
   if (q.includes('ohm')) {
-    return 'For a strong answer on Ohm\\'s Law:\n1. State the law clearly\n2. Write V = IR\n3. Explain V, I, and R\n4. Mention the condition of constant temperature\n5. End with one simple real-life example';
+    return 'For a strong answer on Ohm\'s Law:\n1. State the law clearly\n2. Write V = IR\n3. Explain V, I, and R\n4. Mention the condition of constant temperature\n5. End with one simple real-life example';
   }
 
   if (q.includes('electrolysis')) {
@@ -1052,7 +1066,9 @@ form.addEventListener('submit', async (event) => {
     const gradeMessage = grade ? ' for ' + grade : '';
     showToast('You are on the list, ' + firstName + gradeMessage + '.');
   } catch (error) {
-    formStatus.textContent = 'Could not save right now. Please try again.';
+    formStatus.textContent = isPreviewMode
+      ? 'Backend not reachable. Run node server.js and keep it open while previewing this page.'
+      : 'Could not save right now. Please try again.';
     formStatus.className = 'form-status error';
   }
 });
