@@ -6,8 +6,8 @@ const { createClient } = require("@supabase/supabase-js");
 
 const PORT = process.env.PORT || 3000;
 const ROOT = __dirname;
+const ROOT_INDEX = path.join(ROOT, "prayas (1).html");
 const PUBLIC_DIR = path.join(ROOT, "public");
-const PUBLIC_INDEX = path.join(PUBLIC_DIR, "index.html");
 const DATA_DIR = path.join(ROOT, "data");
 const DATA_FILE = path.join(DATA_DIR, "waitlist.json");
 const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -232,7 +232,7 @@ const server = http.createServer(async (request, response) => {
   }
 
   if (request.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) {
-    sendFile(response, PUBLIC_INDEX);
+    sendFile(response, ROOT_INDEX);
     return;
   }
 
